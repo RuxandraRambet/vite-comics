@@ -58,7 +58,7 @@ export default {
             </div>
             <ul>
                 <li v-for="item in menu">
-                    <a :href="menu.link">{{ item.name }}</a>
+                    <a :href="item.link">{{ item.name }}</a>
                 </li>
             </ul>
         </div>
@@ -69,34 +69,44 @@ export default {
 <style lang="scss">
 @use '../styles/variables.scss' as *;
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+header {
+    padding-top: 20px;
 
-    img {
-        width: 80px;
-    }
-
-    ul {
+    .container {
         display: flex;
-        align-items: center;
-        gap: 30px;
-        text-transform: uppercase;
+        justify-content: space-between;
+        font-size: 14px;
 
-        li {
-            height: 100%;
+        img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
+        ul {
             display: flex;
             align-items: center;
-            color: $graytextcolor;
+            gap: 30px;
+            text-transform: uppercase;
 
-            &:hover {
-                color: $primarycolor;
-                border-bottom: 5px solid $primarycolor;
+            li {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                
+                a {
+                    color: $graytextcolor;
+                }
+
+                &:hover {
+                    color: $primarycolor;
+                    border-bottom: 5px solid $primarycolor;
+                    
+                    a {
+                        color: $primarycolor;
+                    }
+                }
             }
         }
     }
-
-
 }
 </style>
