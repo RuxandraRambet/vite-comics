@@ -1,6 +1,7 @@
 <script>
 import MainContentComponent from './MainContentComponent.vue';
 import MainIconsComponent from './MainIconsComponent.vue';
+
 export default {
     name: 'AppMain',
     components: {
@@ -13,7 +14,7 @@ export default {
 <template>
     <main>
         <MainContentComponent />
-        <MainIconsComponent/>
+        <MainIconsComponent />
     </main>
  
 </template>

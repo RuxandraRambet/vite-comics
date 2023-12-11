@@ -1,23 +1,20 @@
 <script>
+import JumboMain from './JumboMain.vue';
+import CardsMain from './CardsMain.vue';
 export default {
     name: 'ContentComponent',
+    components: {
+        JumboMain,
+        CardsMain,
+    }
 }
 </script>
 
 <template>
-    <section>
-        <div class="container">
-            <p>
-                --&gt;content goes here&lt;--
-            </p>
-        </div>
-    </section>
+    <JumboMain/>
+    <CardsMain />
 </template>
 
 <style lang="scss">
-section {
-    background-color: #1c1c1c;
-    color: #ffff;
-    padding: 60px 0;
-}
+
 </style>
