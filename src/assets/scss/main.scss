@@ -1,0 +1,9 @@
+@use './partials/variables.scss' as *;
+@use './partials/typography.scss' as *;
+@use './partials/common.scss' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -83,34 +83,64 @@ export default {
             ]
         };
     },
-   
+
 }
 </script>
 
 <template>
     <div class="cards-section">
         <div class="container">
+            <h3>current series</h3>
             <div class="cards">
-                <CardMain v-for="card in cards" :image="card.thumb" :title="card.series"/>   
+                <CardMain v-for="card in cards" :image="card.thumb" :title="card.series" />
             </div>
+            <div class="button-container">
+                <button>load more</button>
+            </div>
+
         </div>
     </div>
 </template>
 
 <style lang="scss">
-@use '../styles/variables.scss' as *;
+@use '../assets/scss/partials/variables' as *;
 
 .cards-section {
     background-color: $cardsbgcolor;
 
     .container {
         padding: 50px 0;
+        position: relative;
+
+        h3 {
+            text-transform: uppercase;
+            color: white;
+            background-color: $primarycolor;
+            padding: 15px 30px;
+            position: absolute;
+            left: 0;
+            top: - 25px;
+        }
+
+        .button-container {
+            text-align: center;
+
+            button {
+                text-transform: uppercase;
+                color: white;
+                background-color: $primarycolor;
+                border: none;
+                padding: 15px 60px;
+                margin: 50px 0 15px;
+            }
+        }
+
     }
 
     .cards {
         display: flex;
         flex-wrap: wrap;
-     
+
         .card {
             margin: 20px;
             height: 200px;
@@ -120,8 +150,8 @@ export default {
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;  
-                object-position: top;         
+                object-fit: cover;
+                object-position: top;
             }
 
             h5 {

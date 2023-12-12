@@ -154,7 +154,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../styles/variables.scss' as *;
+@use '../assets/scss/partials/variables' as *;
 
 .footer-top {
     background-image: url(/img/footer-bg.jpg);

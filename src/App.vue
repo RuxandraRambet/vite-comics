@@ -19,8 +19,4 @@ export default {
  
 </template>
 
-<style lang="scss">
-@use './styles/general.scss' as *;
-@use './styles/variables.scss' as *;
-
-</style>
+<style lang="scss"></style>

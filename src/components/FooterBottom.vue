@@ -57,7 +57,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../styles/variables.scss' as *;
+@use '../assets/scss/partials/variables' as *;
 
 .footer-bottom {
     background-color: $footerbgcolor;

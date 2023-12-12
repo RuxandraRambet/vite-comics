@@ -53,7 +53,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../styles/variables.scss' as *;
+@use '../assets/scss/partials/variables' as *;
 
 .icons {
     background-color: $primarycolor;
